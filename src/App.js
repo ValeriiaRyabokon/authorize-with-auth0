@@ -1,40 +1,18 @@
 import React from "react";
-import { Switch, Route, Redirect, Link } from "react-router-dom";
-import Typography from '@material-ui/core/Typography';
+import { Switch, Route, Redirect } from "react-router-dom";
 import { AuthProvider } from "./components/Auth/index";
 import {PrivateRoute} from './components/PrivateRoute'
 import Public from "./components/Public";
 import Private from "./components/Private";
 import Login from "./components/Login";
 import Callback from './components/Callback/index'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
       <AuthProvider>
-        <Typography style={{
-          display:'flex',
-          justifyContent:' space-evenly', 
-          background:'#F0F8FF',
-          padding:'30px'
-        }}>
-          <Link to="/public" style={{
-            textDecoration:'none',
-            fontSize:30,
-            fontWeight:800,
-            color:'#727276'
-          }}>
-            Public
-          </Link>
-          <Link to="/private" style={{
-            textDecoration:'none',
-            fontSize:30,
-            fontWeight:800,
-            color:'#727276'
-          }}>
-            Private
-          </Link>
-        </Typography>
+      <Header />
         <Switch>
           <Route path="/public" component={Public} />
           <Route path="/login" component={Login} />
