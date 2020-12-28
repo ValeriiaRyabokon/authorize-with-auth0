@@ -7,8 +7,8 @@ const useStyles = makeStyles({
     top: "40%",
     left: "27%",
     padding: "20px",
-    background: "#F8F8FF",
-    border: "2px solid #B0C4DE",
+    background: "#E3F2DE",
+    border: "2px solid #ACD6A0",
   },
   title: {
     fontSize: 20,

@@ -1,7 +1,6 @@
 import React, { Component} from "react";
 import { withRouter } from "react-router-dom";
 import auth0 from "auth0-js";
-import userEvent from "@testing-library/user-event";
 
 const { Provider, Consumer: AuthConsumer } = React.createContext({
   isAuthorizade: false,
@@ -13,8 +12,8 @@ class AuthProvider extends Component {
 
   
 auth0 = new auth0.WebAuth({
-    domain: "dev-2iaswd47.eu.auth0.com",
-    clientID: "gLCa7ee6mI0Ec0CGe0X1M9yuaj8BV4ye",
+    domain: "dev-6otq9rge.eu.auth0.com",
+    clientID: "9dgatf8ozY63fd67Rg0OyQMGOIsZ1AUV",
     redirectUri: "http://localhost:3000/callback",
     responseType: "token id_token",
     scope: "openid",

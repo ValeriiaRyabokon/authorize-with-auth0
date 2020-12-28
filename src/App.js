@@ -1,18 +1,18 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { AuthProvider } from "./components/Auth/index";
-import {PrivateRoute} from './components/PrivateRoute'
+import { PrivateRoute } from "./components/PrivateRoute";
 import Public from "./components/Public";
 import Private from "./components/Private";
 import Login from "./components/Login";
-import Callback from './components/Callback/index'
-import Header from './components/Header'
+import Callback from "./components/Callback/index";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <AuthProvider>
-      <Header />
+        <Header />
         <Switch>
           <Route path="/public" component={Public} />
           <Route path="/login" component={Login} />

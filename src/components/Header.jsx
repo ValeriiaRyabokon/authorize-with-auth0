@@ -8,22 +8,22 @@ export default function Header() {
         <Typography style={{
           display:'flex',
           justifyContent:' space-evenly', 
-          background:'#F0F8FF',
+          background:'#ACD6A0',
           padding:'30px'
         }}>
           <Link to="/public" style={{
             textDecoration:'none',
             fontSize:30,
-            fontWeight:800,
-            color:'#727276'
+            fontWeight:900,
+            color:'#EFF6EC'
           }}>
             Public
           </Link>
           <Link to="/private" style={{
             textDecoration:'none',
             fontSize:30,
-            fontWeight:800,
-            color:'#727276'
+            fontWeight:900,
+            color:'#EFF6EC'
           }}>
             Private
           </Link>
